@@ -49,17 +49,17 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>F:\eclipse-workspace\FrameworkProject\reruntestng.xml</span>
+                    <span>F:\eclipse-workspace\FrameworkProject\crossbrowser.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>3 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,  3 skipped,  4 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,34 +102,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc5">tc5</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Crossbrowser" hash-for-method="tc1(edge)">tc1(edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc5">tc5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc5">tc5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc5">tc5</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -140,22 +116,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc1">tc1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Crossbrowser" hash-for-method="tc1(chrome)">tc1(chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc3">tc3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc3">tc3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Logintestng" hash-for-method="tc4">tc4</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.testng.Crossbrowser" hash-for-method="tc1(ff)">tc1(ff)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -173,91 +139,58 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">org.testng.Logintestng</span>
+              <span class="class-name">org.testng.Crossbrowser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc5">
-                  </a> <!-- tc5 -->
-                  <span class="method-name">tc5</span>
-                  <div class="stack-trace">java.lang.AssertionError: checking expected [true] but found [false]
-... Removed 29 stack frames
+                  <a name="tc1(edge)">
+                  </a> <!-- tc1(edge) -->
+                  <span class="method-name">tc1</span>
+                  <span class="parameters">(edge)</span>
+                  <div class="stack-trace">io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: msedgedriver 105.0.1343.27 for WIN 64 not found in https://msedgedriver.azureedge.net/
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:725)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:531)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:722)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:531)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:277)
+	at org.utility.Baseclass.launchEdge(Baseclass.java:87)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: msedgedriver 105.0.1343.27 for WIN 64 not found in https://msedgedriver.azureedge.net/
+	at io.github.bonigarcia.wdm.WebDriverManager.noCandidateUrlFound(WebDriverManager.java:607)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:756)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:593)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:525)
+	... 25 more
+... Removed 17 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">org.testng.Logintestng</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc5">
-                  </a> <!-- tc5 -->
-                  <span class="method-name">tc5</span>
-                  <div class="stack-trace">java.lang.AssertionError: checking expected [true] but found [false]
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc5">
-                  </a> <!-- tc5 -->
-                  <span class="method-name">tc5</span>
-                  <div class="stack-trace">java.lang.AssertionError: checking expected [true] but found [false]
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc5">
-                  </a> <!-- tc5 -->
-                  <span class="method-name">tc5</span>
-                  <div class="stack-trace">java.lang.AssertionError: checking expected [true] but found [false]
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.testng.Logintestng</span>
+              <span class="class-name">org.testng.Crossbrowser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc1">
-                  </a> <!-- tc1 -->
+                  <a name="tc1(chrome)">
+                  </a> <!-- tc1(chrome) -->
                   <span class="method-name">tc1</span>
+                  <span class="parameters">(chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc3">
-                  </a> <!-- tc3 -->
-                  <span class="method-name">tc3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc3">
-                  </a> <!-- tc3 -->
-                  <span class="method-name">tc3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="tc4">
-                  </a> <!-- tc4 -->
-                  <span class="method-name">tc4</span>
+                  <a name="tc1(ff)">
+                  </a> <!-- tc1(ff) -->
+                  <span class="method-name">tc1</span>
+                  <span class="parameters">(ff)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,21 +198,31 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\eclipse-workspace\FrameworkProject\reruntestng.xml</span>
+            <span class="header-content">F:\eclipse-workspace\FrameworkProject\crossbrowser.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;org.testng.FailedAll&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.testng.Logintestng&quot;/&gt;
+      &lt;class name=&quot;org.testng.Crossbrowser&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ff&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.testng.Crossbrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test3&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.testng.Crossbrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,7 +234,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test3 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,38 +250,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">fruit</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">tc3</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">sanity</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">tc1</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">smoke</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">tc3</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">tc4</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">tc5</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -349,44 +266,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc3')
-data.setCell(0, 2, 'org.testng.Logintestng')
-data.setCell(0, 3, 5382);
+data.setCell(0, 1, 'tc1')
+data.setCell(0, 2, 'org.testng.Crossbrowser')
+data.setCell(0, 3, 72842);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'tc1')
-data.setCell(1, 2, 'org.testng.Logintestng')
-data.setCell(1, 3, 5033);
+data.setCell(1, 2, 'org.testng.Crossbrowser')
+data.setCell(1, 3, 17597);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc3')
-data.setCell(2, 2, 'org.testng.Logintestng')
-data.setCell(2, 3, 4992);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'tc4')
-data.setCell(3, 2, 'org.testng.Logintestng')
-data.setCell(3, 3, 4308);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tc5')
-data.setCell(4, 2, 'org.testng.Logintestng')
-data.setCell(4, 3, 2803);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tc5')
-data.setCell(5, 2, 'org.testng.Logintestng')
-data.setCell(5, 3, 2641);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'tc5')
-data.setCell(6, 2, 'org.testng.Logintestng')
-data.setCell(6, 3, 2428);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'tc5')
-data.setCell(7, 2, 'org.testng.Logintestng')
-data.setCell(7, 3, 1975);
+data.setCell(2, 1, 'tc1')
+data.setCell(2, 2, 'org.testng.Crossbrowser')
+data.setCell(2, 3, 8316);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -401,16 +298,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">org.testng.Logintestng</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tc2</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -419,113 +309,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.testng.Logintestng</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">browser</span>
+              <div class="chronological-class-name">org.testng.Crossbrowser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">tc1(ff)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">4261 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc3</span>
-                <span class="method-start">10009 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">15397 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">15400 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc3</span>
-                <span class="method-start">18148 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">23142 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">23145 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc1</span>
-                <span class="method-start">24856 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">29894 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">29897 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc5</span>
-                <span class="method-start">32458 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">35268 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">35269 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc5</span>
-                <span class="method-start">38292 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">40272 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">40273 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tc5</span>
-                <span class="method-start">42760 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">45405 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">45406 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">tc5</span>
-                <span class="method-start">47663 ms</span>
+                <span class="method-name">tc1(edge)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">50095 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">start</span>
-                <span class="method-start">50102 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc4</span>
-                <span class="method-start">51683 ms</span>
+                <span class="method-name">tc1(chrome)</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">end</span>
-                <span class="method-start">55993 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">browserclose</span>
-                <span class="method-start">55995 ms</span>
-              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
